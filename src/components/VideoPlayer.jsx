@@ -42,7 +42,7 @@ function VideoPlayer() {
                 style={{
                     boxShadow: "0px 0px 50px rgba(255, 215, 0, 0.5)"
                 }}
-                src="https://www.youtube.com/embed/6pbreU5ChmA?enablejsapi=1"
+                src="https://www.youtube.com/embed/V-kPTOcTLYg?enablejsapi=1"
                 title="YouTube Video"
                 allowFullScreen
             ></iframe>
