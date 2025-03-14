@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +15,32 @@ function Header() {
                     <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
                 </a>
 
+
                 {/* Menú de navegación (desktop) */}
                 <nav className="hidden md:flex space-x-6">
-                    <a href="#personaje" className="text-md font-bold text-white hover:text-orange-200 transition">Personaje</a>
-                    <a href="#trailer" className="text-md font-bold text-white hover:text-orange-200 transition">Trailer</a>
-                    <a href="#footer" className="text-md font-bold text-white hover:text-orange-200 transition">Contacto</a>
+                    <motion.a
+                        href="#personaje"
+                        className="text-md font-bold text-white hover:text-orange-200 transition"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Personaje
+                    </motion.a>;
+                    <motion.a
+                        href="#trailer"
+                        className="text-md font-bold text-white hover:text-orange-200 transition"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >Trailer</motion.a>
+                    <motion.a
+                        href="#footer"
+                        className="text-md font-bold text-white hover:text-orange-200 transition"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >Contacto</motion.a>
                 </nav>
 
                 <button

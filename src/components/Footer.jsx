@@ -11,7 +11,9 @@ function Footer() {
                     {/* Sección de Información */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Chubbie Cheddar</h3>
-                        <p className="text-sm">Chubbie Cheddar ofrece una experiencia única para compartir productos de calidad entre particulares. Con nosotros, puedes alquilar lo que necesites sin complicaciones.</p>
+                        <p className="text-sm"><b>Chubbie Cheddar</b> es un juego 2D en el que un ratón
+                            debe conseguir el trozo de queso mas preciado por la ratonera, el <b>Wyke Farm Cheddar</b>. <br /> <br />
+                            ¡Ayuda a Chubbie en esta aventura para poder probar el queso que su maestro nunca pudo llegar a consumir!</p>
                     </div>
 
                     {/* Sección de Enlaces */}
