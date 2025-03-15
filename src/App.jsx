@@ -37,20 +37,70 @@ function App() {
 
           </div>
           <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="w-96 h-96 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
+            <div className="w-80 md:w-96 h-80 md:h-96 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
 
               <Parallax speed={-10}>
                 <img className="w-full h-full object-cover" src="/raton.png" alt="Ratón" />
               </Parallax>;
             </div>
           </div>
+
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }} id='personaje' className="flex flex-col md:flex-col bg-gray-700 p-10 shadow-lg">
+          <div className='w-full flex flex-col items-center'>
+            <h1 className="text-4xl font-bold text-center mt-10 pb-10 text-white">
+              Items comsumibles
+            </h1>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+            <div className="flex flex-col justify-center items-center group gap-4   pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
+              <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
+                <img className="w-full h-full object-cover" src="/manzana.png" alt="Manzana" />
+              </div>
+              <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
+                <span className='text-md font-semibold'>Manzana</span>
+                <p>Las manzanas sirven para comprar artículos en la tienda.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center items-center group gap-4 pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
+              <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
+                <img className="w-full object-cover" src="/lima.png" alt="Lima" />
+              </div>
+              <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
+                <span className='text-md font-semibold'>Lima</span>
+                <p>La acidez de la lima produce que Chubbie obtenga energía.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center items-center group gap-4  pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
+              <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
+                <img className="w-full h-full object-cover" src="/queso.png" alt="Queso" />
+              </div>
+              <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
+                <span className='text-md font-semibold'>Queso</span>
+                <p>El queso restablece por completo la vida de Chubbie, curandola.</p>
+              </div>
+            </div>
+          </div>
+
+
         </motion.section>
       </section>
+
+
+
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         id='trailer'>
+        <h1 className='text-[3.5rem] font-bold text-center mt-10 mb-5 text-white'>Trailer Oficial</h1>
         <VideoPlayer />
       </motion.section>
       <footer id='footer'>
