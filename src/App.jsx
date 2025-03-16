@@ -5,11 +5,12 @@ import Footer from './components/Footer'
 import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 
+
 function App() {
   return (
     <div className='bg-gray-800 '>
       <Header />
-      <img src="/portada.jpg" alt="Portada Chubbie Cheddar" />
+      <img src="/portada.webp" alt="Portada Chubbie Cheddar" />
       <section>
         <h1 className='text-[3.5rem] font-bold text-center mt-10 mb-5 text-white'>¡Bienvenido a Chubbie Cheddar!</h1>
         <motion.section
@@ -40,7 +41,7 @@ function App() {
             <div className="w-80 md:w-96 h-80 md:h-96 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
 
               <Parallax speed={-10}>
-                <img className="w-full h-full object-cover" src="/raton.png" alt="Ratón" />
+                <img className="w-full h-full object-cover" src="/raton.webp" alt="Ratón" />
               </Parallax>;
             </div>
           </div>
@@ -60,7 +61,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-5">
             <div className="flex flex-col justify-center items-center group gap-4   pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
               <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
-                <img className="w-full h-full object-cover" src="/manzana.png" alt="Manzana" />
+                <img className="w-full h-full object-cover" src="/manzana.webp" alt="Manzana" />
               </div>
               <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
                 <span className='text-md font-semibold'>Manzana</span>
@@ -70,7 +71,7 @@ function App() {
 
             <div className="flex flex-col justify-center items-center group gap-4 pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
               <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
-                <img className="w-full object-cover" src="/lima.png" alt="Lima" />
+                <img className="w-full object-cover" src="/lima.webp" alt="Lima" />
               </div>
               <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
                 <span className='text-md font-semibold'>Lima</span>
@@ -80,7 +81,7 @@ function App() {
 
             <div className="flex flex-col justify-center items-center group gap-4  pt-2 border-2 border-gray-600 rounded-xl shadow-2xl">
               <div className="w-48 h-48 rounded-full border-4 border-white p-10 hover:border-orange-600 hover:scale-105 duration-300 overflow-hidden flex justify-center items-center">
-                <img className="w-full h-full object-cover" src="/queso.png" alt="Queso" />
+                <img className="w-full h-full object-cover" src="/queso.webp" alt="Queso" />
               </div>
               <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg  bg-white text-black group-hover:bg-orange-500 duration-300 group-hover:text-white">
                 <span className='text-md font-semibold'>Queso</span>

@@ -30,7 +30,7 @@ function VideoPlayer() {
         <div className="flex flex-col w-full max-w-3xl mx-auto p-10 justify-center items-center">
             <div className="w-40 md:w-60 h-17 md:h-25">
                 <img
-                    src={isPlaying ? "/raton.png" : "/raton-dormido.png"}
+                    src={isPlaying ? "/raton.webp" : "/raton-dormido.webp"}
                     alt={isPlaying ? "Personaje activo" : "Personaje dormido"}
                     className="w-full transition-all duration-700 ease-in-out transform object-cover"
                 />

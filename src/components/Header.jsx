@@ -12,7 +12,7 @@ function Header() {
         <header className="bg-gray-800 shadow-lg">
             <div className="container mx-auto flex items-center justify-between py-4 px-6">
                 <a href="/" className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
+                    <img src="/logo.webp" alt="Logo" className="h-20 w-auto" />
                 </a>
 
 
