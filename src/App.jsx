@@ -4,12 +4,15 @@ import VideoPlayer from './components/VideoPlayer'
 import Footer from './components/Footer'
 import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
+import Carrousel from './components/Carrousel';
+
 
 
 function App() {
   return (
     <div className='bg-gray-800 '>
       <Header />
+
       <img src="/portada.webp" alt="Portada Chubbie Cheddar" />
       <section>
         <h1 className='text-[3.5rem] font-bold text-center mt-10 mb-5 text-white'>¡Bienvenido a Chubbie Cheddar!</h1>
@@ -51,7 +54,7 @@ function App() {
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }} id='personaje' className="flex flex-col md:flex-col bg-gray-700 p-10 shadow-lg">
+          transition={{ duration: 1 }} id='items' className="flex flex-col md:flex-col bg-gray-700 p-10 shadow-lg">
           <div className='w-full flex flex-col items-center'>
             <h1 className="text-4xl font-bold text-center mt-10 pb-10 text-white">
               Items comsumibles
@@ -92,6 +95,7 @@ function App() {
 
 
         </motion.section>
+
       </section>
 
 
@@ -104,6 +108,10 @@ function App() {
         <h1 className='text-[3.5rem] font-bold text-center mt-10 mb-5 text-white'>Trailer Oficial</h1>
         <VideoPlayer />
       </motion.section>
+      <section id='recursos'>
+        <Carrousel />
+      </section>
+
       <footer id='footer'>
         <Footer />
       </footer>

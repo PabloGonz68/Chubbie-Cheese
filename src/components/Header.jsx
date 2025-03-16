@@ -28,12 +28,28 @@ function Header() {
                         Personaje
                     </motion.a>;
                     <motion.a
+                        href="#items"
+                        className="text-md font-bold text-white hover:text-orange-200 transition"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Items
+                    </motion.a>;
+                    <motion.a
                         href="#trailer"
                         className="text-md font-bold text-white hover:text-orange-200 transition"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >Trailer</motion.a>
+                    <motion.a
+                        href="#recursos"
+                        className="text-md font-bold text-white hover:text-orange-200 transition"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >Recursos</motion.a>
                     <motion.a
                         href="#footer"
                         className="text-md font-bold text-white hover:text-orange-200 transition"
