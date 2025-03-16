@@ -62,7 +62,7 @@ Creado en **Adobe Illustrator**, con una estética coherente con el juego:
 
 ## 🎥 Tráiler del Videojuego  
 
-🔗 **[Ver Tráiler en YouTube](#https://www.youtube.com/watch?v=V-kPTOcTLYg)**  
+🔗 **https://www.youtube.com/watch?v=V-kPTOcTLYg**  
 
 ---
 
